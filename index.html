@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<!--  O content tp foi copy paste e ele ajusta automaticamente +-   --> 
+<div class="content">
+    <!--  Form jogador  --> 
+    <div id="jogador" style="display: block">
+
+        <h1 id="questionh1">Nome:</h1>
+
+        <input type="text" id="nome"></input>
+
+        <button onclick="MudarForm()" id="comecar">Começar</button>
+    </div>
+
+    <!--  Form perguntas  --> 
+    <div id="form" style="display: none">
+        <!--  Aquele h1 (titulo)   --> 
+        <h1 id="questionh1">Question:</h1>
+        <!--  Vai receber a pergunta atraves do js   --> 
+        <h1 id="pergunta">Qualquer Coisa</h1>
+         <!--  Aquele h1 (categoria)   --> 
+        <h1 id="categoriah1">Category:</h1>
+        <!--  Vai receber a pergunta atraves do js   --> 
+        <h1 id="categoria">Qualquer Coisa</h1>
+
+         <!--  Pelo nome ja da pra saber o que é   --> 
+        <button id="resposta1">Resposta</button>
+        <button id="resposta2">Resposta</button>
+        <button id="resposta3">Resposta</button>
+        <button id="resposta4">Resposta</button>
+
+        <button id="novaPergunta">Nova Pergunta</button>
+
+        <button id="btn5050">50/50</button>
+        
+         <!--  Pontuação  --> 
+        <p id="certas">Pontuação: 0</p>
+        <p id="texto" style="display: none;"></p>
+        <p id="timer"></p>
+    </div>
+
+     <!--  Form resultado  --> 
+    <div id="fim" style="display: none">
+
+        <h1 id="questionh1">GameOver</h1>
+
+        <h1 id="resultado"></h1>
+
+        <button id="leaderboard">Show scores</button>
+
+    </div>
+
+    <div id="showLeaderBoard" style="display: none">
+
+        <h1 id="title">This is best player</h1>
+        <table id="bestTable">
+            <tr>
+                <th >Nome</th> 
+                <th >Pontos</th>
+              </tr>
+            <tr>
+                <td id="bestN">Xavier</td>
+                <td id="bestP">40</td>
+            </tr>
+        </table>
+        <h4>These are some losers that tryed to beat the best</h4>
+        <table id="tabela">
+            <tr>
+                <th>Nome</th> 
+                <th>Pontos</th>
+              </tr>
+           
+        </table>
+       
+
+
+    </div>
+
+
+
+        
+
+        
+
+</div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
